@@ -1,0 +1,285 @@
+/* font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* common styles or utilities */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+.container{
+    display: flex;
+    margin: 70px 180px 0px 180px;
+}
+/* banner style */
+.banner{
+    background-color: #2D25A0;
+    width: 100%; 
+    height: 677px;  
+    display: flex;
+    /* padding: 150px; */
+}
+.banner-heading{
+    padding: 207px 102px 169px 156px;
+}
+.banner-heading h1{
+    font-weight: 700;
+    color:#FFFFFF;
+    font-size: 64px;
+    line-height: 80px;
+    margin-bottom: 27px;
+}
+.banner-heading a{
+    background-color: #E02C6D;
+    height: 44px;
+    width: 168px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 32px 10px 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transform: scale(1.25);
+}
+.banner-heading a:hover{
+    color: #E02C6D;
+    background-color: #FFFFFF;
+}
+
+
+#arrow{ 
+    /* width: 24px;
+    height: 24px; */
+    margin-left: 8px;
+}
+.banner img{
+    margin-top: 153px;
+    width: 556.01px;
+    height: 438px;
+    margin-bottom: 86px;
+    transition: transform 3s ease-in-out;
+}
+.banner img:hover{
+    transform: scale(1.15);
+}
+/* banner style ends */
+
+/* players style starts */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+}
+.player{
+    padding: 15px;
+    width: 297px;
+    height: 441px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+
+}
+.player img{
+    width: 300px;
+    height: 256px;
+    left: 0px;
+    top: 0px;
+    /* margin: 16px; */
+}
+.player-details{
+    width: 300px;
+    height: 154px;
+}
+.player-details h3{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+.player-details p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C6C;
+    margin-bottom: 16px;
+}
+/* banner style ends */
+
+/* Todays Match style */
+    .match-today{
+        width: 800px;
+        height: 280px;
+        margin-left: 125px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    }
+    .flags{
+        padding-left: 25px;
+        display: flex;
+        align-items: center;
+        margin: 50px 50px 0px 50px ;
+    }
+    .match-today h1{
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+        margin: 14px 0px;
+    }
+    .flag{
+        display: flex;
+        align-items: baseline;
+    }
+    .flag h3{
+        margin: 0px 15px;
+    }
+    .flag img{
+        height: 80px;
+        width: 110px;
+        box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+        transition: transform 2s;
+    }
+    .flag img:hover{
+        transform: scale(1.2);
+        box-shadow: 0px 0px 40px 0px rgba(255, 0, 0, 0.15);;
+    }
+    .result{
+        width: 210px;
+        height: 140px;
+        /* padding: 0px 100px 0px 50px; */
+        font-size: 14px;
+        text-align: center;
+        color: #6C6C6C;
+    }
+/* Todays Match style ends */
+
+/* footer style */
+
+.footer{
+    width: 483.87px;
+    height: 213px;
+    padding: 158px 481px 63px 475px;
+    flex-direction: column;
+}
+.logo img{
+    width: 483.87px;
+    height: 110px;
+    margin-bottom: 20px;
+}
+.icons{
+    width: 197px;
+    height: 32px;
+    margin: 0px 143.94px;
+
+}
+.icons a i{
+    font-size: 32px;
+    width:32px;
+    margin-right: 14px;
+}
+    
+.copyright p{
+    height: 31px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 20px 123.94px 0px 121.94px;
+}
+/* footer style ends*/
+
+/* Media Query */
+/* Mobile Devices */
+
+@media only screen and (max-width:688px) {
+    
+    /* Banner Section */
+    .banner{
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .banner-heading{
+        padding: 112px 66px 10px 16px;
+    }
+    .banner-heading h1{
+        width: 100%;
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .banner img{
+        width: 90%;
+        height: 100%;
+        margin-top: 50px;
+        margin-bottom: 62px;
+        padding: 0px 20px;
+    }
+
+    /* Players Section */
+
+    .container{
+        margin: 47px 0px 0px 0px;
+        justify-content: center;
+    }
+
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* todays match section */
+    .match-today{
+        width: 70%;
+        height: 80%;
+        margin-left: 2%;
+    }
+    .flags{
+        padding-left: 5%;
+        margin: 2% 2% 0% 2%;
+    }
+    .match-today h1{
+        font-size: 24px;
+    }
+    .flag h3{
+        margin: 0% 2%;
+        font-size: 10px;
+    }
+    .flag img{
+        height: 35%;
+        width: 50%;
+    }
+    .result{
+        height: 60%;
+        width: 70%;
+        font-size: 8px;
+    }
+
+
+    /* footer section */
+    .footer{
+        width: 90%;
+        padding: 43px 62px 187px 18px ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo{
+        width: 90%;
+    }
+    .logo img{
+        width: 80%;
+        height: 80%
+    }
+    .icons{
+        margin: 0px 95px;
+    }
+    .icons a i{
+        font-size: 32px;
+        width:32px;
+        margin-right: 14px;
+    }
+    .copyright p{
+        width: 73%;
+        margin: 20px 62px 0px 48px;
+    }
+
+
+}
